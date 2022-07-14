@@ -364,7 +364,7 @@ h6 {
   justify-content: space-between;
 }
 .edrea_tm_header .logo img {
-  max-width: 100px;
+  max-width: 149px;
 }
 .edrea_tm_header .menu ul {
   margin: 0px;
@@ -464,7 +464,7 @@ h6 {
 }
 .edrea_tm_home .name {
   color: #fff;
-  font-size: 72px;
+  font-size: 62px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -1154,7 +1154,7 @@ h6 {
 }
 .edrea_tm_modalbox .about_popup_details .partners .list ul li img {
   max-width: 65%;
-  max-height: 65px;
+  max-height: 165px;
 }
 .edrea_tm_modalbox .about_popup_details .partners .list ul li .list_inner {
   width: 100%;
