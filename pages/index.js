@@ -8,19 +8,10 @@ import Layout from "../src/layouts/Layout";
 const Index = () => {
   return (
     <Layout>
-      {/* HOME */}
       <Home />
-      {/* /HOME */}
-      {/* ABOUT */}
       <About />
-      {/* /ABOUT */}
-      {/* PORTFOLIO */}
       <Portfolio />
-      {/* /PORTFOLIO */}
-      {/* NEWS */}
       <News />
-      {/* /NEWS */}
-      {/* CONTACT */}
       <Contact />
     </Layout>
   );
