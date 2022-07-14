@@ -3,44 +3,42 @@ import AnimatedText from "./AnimatedText";
 import AboutPopup from "./popup/AboutPopup";
 
 const aboutData = {
-  firstName: "David",
-  lastName: "Parker",
-  bithday: "01.07.1990",
-  address: "Avon str. 22, NYC, USA",
-  phn: "+77 022 155 02 02",
-  email: "example@gmail.com",
+  firstName: "Jameem",
+  lastName: "Mohammed",
+  bithday: "19.09.1989",
+  address: "Busse str. 18, Hamburg",
+  email: "jameem.mp@gmail.com",
   serviceLists: [
-    "Website Development",
-    "Digital Experience",
-    "Content Marketing",
-    "Social Media Design",
-    "Shared Web Hosting",
+    "Fullstack Web Development",
+    "Expertise in Cutting Edge Technologies",
+    "Enterprise Resource Planning Consultant",
+    "Master in Javascript World",
   ],
   skills: {
-    programming: [
-      { name: "WordPress", value: "95" },
-      { name: "JavaScript", value: "80" },
-      { name: "Angular", value: "90" },
-    ],
     language: [
       { name: "English", value: "95" },
-      { name: "Russian", value: "80" },
-      { name: "Arabic", value: "90" },
+      { name: "Malayalam", value: "100" },
+      { name: "Hindi", value: "80" },
     ],
   },
   education: [
-    { year: "2014 - 2016", unv: "Oxford Univercity", degree: "Master Degree" },
-    { year: "2010 - 2014", unv: "Texas Univercity", degree: "Bachelor Degree" },
-    { year: "2008 - 2010", unv: "Simone College", degree: "Associate Degree" },
+    { year: "2009 - 2013", unv: "Calicut University", degree: "Bachelors Degree" },
+    { year: "2006 - 2007", unv: "IHRD", degree: "Higher Secondary" },
   ],
   working: [
-    {
-      year: "2018 - running",
-      company: "Envato Elements",
-      deg: "Exclusive Author",
+     {
+      year: "2021 - current",
+      company: "Sport Alliance GmbH",
+      deg: "Frontend Engineer",
     },
-    { year: "2015 - 2018", company: "Avo Corporation", deg: "Content Manager" },
-    { year: "2012 - 2015", company: "FC Barcelona", deg: "Football Player" },
+    {
+      year: "2019 - 2021",
+      company: "Qubicle Innovations",
+      deg: "Tech Lead",
+    },
+    { year: "2017 - 2019", company: "Premier Logistics LLC", deg: "Fullstack Developer" },
+    { year: "2014 - 2017", company: "Codinoz Technologies", deg: "Intermediate Developer" },
+    { year: "2013 - 2014", company: "Polosys Technologies", deg: "Junior Developer" },
   ],
   partnersLogos: [
     "img/partners/1.png",
@@ -80,10 +78,12 @@ const About = () => {
               </div>
               <div className="text">
                 <p>
-                  My name is <span>David Parker.</span> I am a graphic designer,
-                  and {`I'm`} very passionate and dedicated to my work. With 20
-                  years experience as a professional a graphic designer, I have
-                  acquired the skills and knowledge.
+                  My name is <span>Jameem Mohammed.</span> I build things for th web,
+                  and {`I'm`} very passionate and dedicated to my work. I have been building applications 
+                   with different
+                  languages for the last nine years. I'm an advocate for
+                  people-first, collaborative company culture, constant learning
+                  and open-source tools.
                 </p>
               </div>
               <div className="edrea_tm_button">

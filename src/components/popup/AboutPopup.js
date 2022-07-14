@@ -58,14 +58,6 @@ const AboutPopup = ({ open, close, aboutData }) => {
                 </li>
                 <li>
                   <div className="list_inner">
-                    <i className="icon-phone" />
-                    <span>
-                      <a href="#">{aboutData.phn}</a>
-                    </span>
-                  </div>
-                </li>
-                <li>
-                  <div className="list_inner">
                     <i className="icon-mail-1" />
                     <span>
                       <a href={`mailto:${aboutData.email}`}>
@@ -95,10 +87,11 @@ const AboutPopup = ({ open, close, aboutData }) => {
               </div>
               <div className="text">
                 <p>
-                  Hello everybody! My name is <span>David Parker.</span> I am a
-                  graphic designer, and {`I'm`} very passionate and dedicated to
-                  my work. With 20 years experience as a professional a graphic
-                  designer, I have acquired the skills and knowledge.
+                  Hello everybody! My name is <span>Jameem Mohammed.</span> I build things for th web,
+                  and {`I'm`} very passionate and dedicated to my work. I have been building applications 
+                   with different languages for the last nine years. I'm an advocate for
+                  people-first, collaborative company culture, constant learning
+                  and open-source tools.
                 </p>
               </div>
             </div>
@@ -106,7 +99,7 @@ const AboutPopup = ({ open, close, aboutData }) => {
               <div className="about_title">
                 <h3>
                   <span>
-                    Quality <span className="coloring">Services</span>
+                    Quality <span className="coloring">Expertise</span>
                   </span>
                 </h3>
               </div>
@@ -122,44 +115,60 @@ const AboutPopup = ({ open, close, aboutData }) => {
                 </ul>
               </div>
             </div>
-            <div className="prog_skill">
+
+            <div className="partners">
               <div className="about_title">
                 <h3>
                   <span>
-                    Programming <span className="coloring">Skills</span>
+                    My <span className="coloring">Skillset</span>
                   </span>
                 </h3>
               </div>
-              <div className="oki_progress">
-                {aboutData.skills &&
-                  aboutData.skills.programming &&
-                  aboutData.skills.programming.map((programming, i) => (
-                    <div
-                      key={i}
-                      className="progress_inner skillsInner___"
-                      data-value={95}
-                    >
-                      <span>
-                        <span className="label">{programming.name}</span>
-                        <span
-                          className="number"
-                          style={{ right: `${100 - programming.value}%` }}
-                        >
-                          {programming.value}%
-                        </span>
-                      </span>
-                      <div className="background">
-                        <div className="bar open">
-                          <div
-                            className="bar_in"
-                            style={{ width: `${programming.value}%` }}
-                          />
+              <div className="list">
+                <ul>
+                  {aboutData &&
+                    aboutData.partnersLogos &&
+                    aboutData.partnersLogos.map((logo, i) => (
+                      <li key={i}>
+                        <div className="list_inner">
+                          <img src={logo} alt="" />
+                          <a className="cavani_tm_full_link" href="#" />
                         </div>
-                      </div>
-                    </div>
-                  ))}
+                      </li>
+                    ))}
+                </ul>
               </div>
             </div>
+
+            <div className="timeline">
+              <div className="about_title">
+                <h3>
+                  <span>
+                    Working <span className="coloring">Timeline</span>
+                  </span>
+                </h3>
+              </div>
+              <div className="list">
+                <ul>
+                  {aboutData &&
+                    aboutData.working &&
+                    aboutData.working.map((work, i) => (
+                      <li key={i}>
+                        <div className="list_inner">
+                          <div className="time">
+                            <span>{work.year}</span>
+                          </div>
+                          <div className="place">
+                            <h3>{work.company}</h3>
+                            <span>{work.deg}</span>
+                          </div>
+                        </div>
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            </div>
+            
             <div className="lang_skill">
               <div className="about_title">
                 <h3>
@@ -223,62 +232,13 @@ const AboutPopup = ({ open, close, aboutData }) => {
                 </ul>
               </div>
             </div>
-            <div className="timeline">
-              <div className="about_title">
-                <h3>
-                  <span>
-                    Working <span className="coloring">Timeline</span>
-                  </span>
-                </h3>
-              </div>
-              <div className="list">
-                <ul>
-                  {aboutData &&
-                    aboutData.working &&
-                    aboutData.working.map((work, i) => (
-                      <li key={i}>
-                        <div className="list_inner">
-                          <div className="time">
-                            <span>{work.year}</span>
-                          </div>
-                          <div className="place">
-                            <h3>{work.company}</h3>
-                            <span>{work.deg}</span>
-                          </div>
-                        </div>
-                      </li>
-                    ))}
-                </ul>
-              </div>
-            </div>
-            <div className="partners">
-              <div className="about_title">
-                <h3>
-                  <span>
-                    My <span className="coloring">Partners</span>
-                  </span>
-                </h3>
-              </div>
-              <div className="list">
-                <ul>
-                  {aboutData &&
-                    aboutData.partnersLogos &&
-                    aboutData.partnersLogos.map((logo, i) => (
-                      <li key={i}>
-                        <div className="list_inner">
-                          <img src={logo} alt="" />
-                          <a className="cavani_tm_full_link" href="#" />
-                        </div>
-                      </li>
-                    ))}
-                </ul>
-              </div>
-            </div>
+            
+            
             <div className="testimonial">
               <div className="about_title">
                 <h3>
                   <span>
-                    Clients <span className="coloring">Feedback</span>
+                    Clients <span className="coloring">Testimonials</span>
                   </span>
                 </h3>
               </div>
