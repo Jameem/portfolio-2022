@@ -1,14 +1,14 @@
-import { useContext } from "react";
-import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { context } from "../../context/context";
-import { testimonialSlider } from "../../sliderProps";
-import AnimatedText from "../AnimatedText";
-import Modal from "./Modal";
+import { useContext } from "react"
+import { buildStyles, CircularProgressbar } from "react-circular-progressbar"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { context } from "../../context/context"
+import { testimonialSlider } from "../../sliderProps"
+import AnimatedText from "../AnimatedText"
+import Modal from "./Modal"
 
 const AboutPopup = ({ open, close, aboutData }) => {
-  const colorContext = useContext(context);
-  const { color } = colorContext;
+  const colorContext = useContext(context)
+  const { color } = colorContext
 
   return (
     <Modal open={open} close={close}>
@@ -87,9 +87,10 @@ const AboutPopup = ({ open, close, aboutData }) => {
               </div>
               <div className="text">
                 <p>
-                  Hello everybody! My name is <span>Jameem Mohammed.</span> I build things for th web,
-                  and {`I'm`} very passionate and dedicated to my work. I have been building applications 
-                   with different languages for the last nine years. I'm an advocate for
+                  Hello everybody! My name is <span>Jameem.</span> I build
+                  things for th web, and {`I'm`} very passionate and dedicated
+                  to my work. I have been building applications with different
+                  languages for the last nine years. I'm an advocate for
                   people-first, collaborative company culture, constant learning
                   and open-source tools.
                 </p>
@@ -168,7 +169,7 @@ const AboutPopup = ({ open, close, aboutData }) => {
                 </ul>
               </div>
             </div>
-            
+
             <div className="lang_skill">
               <div className="about_title">
                 <h3>
@@ -232,8 +233,7 @@ const AboutPopup = ({ open, close, aboutData }) => {
                 </ul>
               </div>
             </div>
-            
-            
+
             <div className="testimonial">
               <div className="about_title">
                 <h3>
@@ -249,31 +249,11 @@ const AboutPopup = ({ open, close, aboutData }) => {
                       <div className="text">
                         <i className="icon-quote-left" />
                         <p>
-                          Beautiful minimalist design and great, fast response
-                          with support. Highly recommend. Thanks Marketify!
-                        </p>
-                      </div>
-                      <div className="details">
-                        <div className="image">
-                          <div
-                            className="main"
-                            data-img-url="img/testimonials/1.jpg"
-                          />
-                        </div>
-                        <div className="info">
-                          <h3>Alexander Walker</h3>
-                          <span>Graphic Designer</span>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="list_inner">
-                      <div className="text">
-                        <i className="icon-quote-left" />
-                        <p>
-                          These people really know what they are doing! Great
-                          customer support availability and supperb kindness.
+                          We thank Jameem for the wonderful job in helping us
+                          develop our ERP application. He was professional,
+                          excellent and hard working. Thanks to him, we were
+                          able to achieve our goal on time, and we look forward
+                          to continue working with them in the future.
                         </p>
                       </div>
                       <div className="details">
@@ -284,20 +264,47 @@ const AboutPopup = ({ open, close, aboutData }) => {
                           />
                         </div>
                         <div className="info">
-                          <h3>Armin Van Buuren</h3>
-                          <span>Content Manager</span>
+                          <h3>Adnan Qaisar</h3>
+                          <span>IT Head, Qatar Steel Foundation</span>
                         </div>
                       </div>
                     </div>
                   </SwiperSlide>
+
                   <SwiperSlide>
                     <div className="list_inner">
                       <div className="text">
                         <i className="icon-quote-left" />
                         <p>
-                          I had a little problem and the support was just
-                          awesome to quickly solve the situation. And keep going
-                          on.
+                          We had the opportunity to work on a full scalce ERP
+                          application with Jameem. I am happy to say we finally
+                          hired him and have worked closely with us throughout
+                          the process.
+                        </p>
+                      </div>
+                      <div className="details">
+                        <div className="image">
+                          <div
+                            className="main"
+                            data-img-url="img/testimonials/1.jpg"
+                          />
+                        </div>
+                        <div className="info">
+                          <h3>Faheem Mohammed</h3>
+                          <span>CEO, Codinoz Technologies</span>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <div className="list_inner">
+                      <div className="text">
+                        <i className="icon-quote-left" />
+                        <p>
+                          I had the opportunity to work with Jameem a few years
+                          back, and I can say he is professional, conscientious
+                          and thoroughly competent with his work.
                         </p>
                       </div>
                       <div className="details">
@@ -308,8 +315,8 @@ const AboutPopup = ({ open, close, aboutData }) => {
                           />
                         </div>
                         <div className="info">
-                          <h3>Baraka Clinton</h3>
-                          <span>English Teacher</span>
+                          <h3>Riyas PT</h3>
+                          <span>Data Analyst, Microsoft</span>
                         </div>
                       </div>
                     </div>
@@ -321,6 +328,6 @@ const AboutPopup = ({ open, close, aboutData }) => {
         </div>
       </div>
     </Modal>
-  );
-};
-export default AboutPopup;
+  )
+}
+export default AboutPopup
