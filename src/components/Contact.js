@@ -1,4 +1,29 @@
+import React, { useRef, useState } from "react"
+import emailjs from "@emailjs/browser"
+
 const Contact = () => {
+  const form = useRef()
+  const [messageSent, setMessageSent] = useState(false)
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        process.env.CONTACT_SERVICE_ID,
+        process.env.CONTACT_TEMPLATE_ID,
+        form.current,
+        process.env.CONTACT_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+          setMessageSent(true)
+        },
+        (error) => {
+          console.log(error.text)
+        }
+      )
+  }
   return (
     <div className="edrea_tm_section hidden animated" id="contact">
       <div className="section_inner">
@@ -21,14 +46,7 @@ const Contact = () => {
                     </span>
                   </div>
                 </li>
-                <li>
-                  <div className="list_inner">
-                    <i className="icon-phone" />
-                    <span>
-                      <a href="#">+77 022 155 02 02</a>
-                    </span>
-                  </div>
-                </li>
+
                 <li>
                   <div className="list_inner">
                     <i className="icon-mail-1" />
@@ -50,15 +68,13 @@ const Contact = () => {
             <div className="right">
               <div className="fields">
                 <form
+                  ref={form}
                   action="/"
                   method="post"
                   className="contact_form"
                   id="contact_form"
+                  onSubmit={sendEmail}
                 >
-                  <div
-                    className="returnmessage"
-                    data-success="Your message has been received, We will contact you soon."
-                  />
                   <div className="empty_notice">
                     <span>Please Fill Required Fields</span>
                   </div>
@@ -67,20 +83,22 @@ const Contact = () => {
                       <li>
                         <div className="list_inner">
                           <input
-                            id="name"
+                            name="from_name"
                             type="text"
                             placeholder="Name"
                             autoComplete="off"
+                            required
                           />
                         </div>
                       </li>
                       <li>
                         <div className="list_inner">
                           <input
-                            id="email"
+                            name="from_email"
                             type="text"
                             placeholder="Email"
                             autoComplete="off"
+                            required
                           />
                         </div>
                       </li>
@@ -88,17 +106,25 @@ const Contact = () => {
                   </div>
                   <div className="last">
                     <textarea
-                      id="message"
+                      name="message"
                       placeholder="Message"
                       defaultValue={""}
+                      required
                     />
                   </div>
-                  <div className="edrea_tm_button">
-                    <a id="send_message" href="#">
-                      Send Message
-                    </a>
-                  </div>
-                  {/* If you want change mail address to yours, just open "modal" folder >> contact.php and go to line 4 and change detail to yours.  */}
+                  {!messageSent ? (
+                    <div className="edrea_tm_button">
+                      <input
+                        type="submit"
+                        value="Send Message"
+                        className="edrea_tm_button"
+                      />
+                    </div>
+                  ) : (
+                    <div className="returnmessage">
+                      Your message has been sent successfully.
+                    </div>
+                  )}
                 </form>
               </div>
             </div>
@@ -106,6 +132,6 @@ const Contact = () => {
         </div>
       </div>
     </div>
-  );
-};
-export default Contact;
+  )
+}
+export default Contact

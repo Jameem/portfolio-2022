@@ -487,6 +487,30 @@ h6 {
   position: relative;
   z-index: 5;
 }
+.edrea_tm_button input {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  background-color: var(--main-color);
+  padding: 10px 40px;
+  text-align: center;
+  border-radius: 50px;
+  font-family: "Poppins";
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.edrea_tm_button input:hover {
+  background-color: #fff;
+  color: #000;
+}
+.edrea_tm_button.full input {
+  display: block;
+}
+
 .edrea_tm_button a {
   text-decoration: none;
   color: #fff;
@@ -503,7 +527,7 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.edrea_tm_button a:hover {
+.edrea_tm_button auto:hover {
   background-color: #fff;
   color: #000;
 }
@@ -2235,6 +2259,10 @@ h6 {
     margin-bottom: 5px;
   }
   .edrea_tm_button a {
+    padding: 8px 40px;
+  }
+
+  .edrea_tm_button input {
     padding: 8px 40px;
   }
   .edrea_tm_modalbox .about_popup_details .left .list ul li span {
