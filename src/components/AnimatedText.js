@@ -1,28 +1,31 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react"
+import Typed from "typed.js"
 
 const homeData = {
-  skills: ["Engineer", "Developer"]
-};
+  skills: ["Engineer", "Developer"],
+}
 const AnimatedText = () => {
-  const [text, setText] = useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setText(text < 2 ? text + 1 : 1);
-    }, 5000);
-    return () => clearInterval(interval);
-  });
+  const el = useRef(null)
+  const typed = useRef(null)
 
-  return (
-    <span className="cd-headline rotate-1">
-      <span className="blc">{text===2?'Javascript':'Software'} </span>
-      <span className="cd-words-wrapper">
-        {homeData.skills.map((skill, i) => (
-          <b key={i} className={text === i+1 ? "is-visible" : "is-hidden"}>
-            {skill}
-          </b>
-        ))}
-      </span>
-    </span>
-  );
-};
-export default AnimatedText;
+  useEffect(() => {
+    const options = {
+      strings: [
+        "Software <strong>Engineer</strong>",
+        "Javascript <strong>Developer</strong>",
+        "Blockchain <strong>Enthusiast</strong>",
+      ],
+      typeSpeed: 70,
+      backSpeed: 70,
+      loop: true,
+    }
+    typed.current = new Typed(el.current, options)
+
+    return () => {
+      typed.current.destroy()
+    }
+  }, [])
+
+  return <span style={{ whiteSpace: "pre" }} ref={el} />
+}
+export default AnimatedText
