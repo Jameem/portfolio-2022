@@ -1,10 +1,10 @@
-import { Fragment, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { portfolioSlider } from "../sliderProps";
-import PortfolioModal from "./popup/PortfolioModal";
+import { Fragment, useState } from "react"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { portfolioSlider } from "../sliderProps"
+import PortfolioModal from "./popup/PortfolioModal"
 
 const Portfolio = () => {
-  const [modal, setModal] = useState(false);
+  const [modal, setModal] = useState(false)
   return (
     <Fragment>
       <PortfolioModal open={modal} close={() => setModal(false)} />
@@ -29,12 +29,13 @@ const Portfolio = () => {
                         />
                       </div>
                       <div className="details">
-                        <h3>Sweet Fruit</h3>
-                        <span>Vimeo</span>
+                        <h3>Zinia BSuite</h3>
+                        <span>Enterprise Resource Planning</span>
                       </div>
                       <a
-                        className="edrea_tm_full_link popup-vimeo"
-                        href="//player.vimeo.com/video/337293658?autoplay=1"
+                        className="edrea_tm_full_link"
+                        href="http://zinia.tech/"
+                        target="_blank"
                       />
                     </div>
                   </SwiperSlide>
@@ -48,12 +49,13 @@ const Portfolio = () => {
                         />
                       </div>
                       <div className="details">
-                        <h3>Good Present</h3>
-                        <span>Youtube</span>
+                        <h3>Netflix Clone</h3>
+                        <span>Entertainment</span>
                       </div>
                       <a
-                        className="edrea_tm_full_link popup-youtube"
-                        href="//www.youtube.com/embed/7e90gBu4pas?autoplay=1"
+                        className="edrea_tm_full_link"
+                        href="https://netflix-clone-5ea22.web.app/"
+                        target="_blank"
                       />
                     </div>
                   </SwiperSlide>
@@ -67,12 +69,13 @@ const Portfolio = () => {
                         />
                       </div>
                       <div className="details">
-                        <h3>Mockup Cream</h3>
-                        <span>Soundcloud</span>
+                        <h3>Covid-19 Tracker</h3>
+                        <span>Healthcare</span>
                       </div>
                       <a
-                        className="edrea_tm_full_link soundcloude_link mfp-iframe audio"
-                        href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                        className="edrea_tm_full_link soundcloude_link mfp-iframe"
+                        href="https://covid-tracker-7fed5.web.app/"
+                        target="_blank"
                       />
                     </div>
                   </SwiperSlide>
@@ -86,13 +89,13 @@ const Portfolio = () => {
                         />
                       </div>
                       <div className="details">
-                        <h3>Delicious Apple</h3>
-                        <span>Detail</span>
+                        <h3>Zea Chat</h3>
+                        <span>Social Media</span>
                       </div>
                       <a
-                        className="edrea_tm_full_link portfolio_popup"
-                        href="#"
-                        onClick={() => setModal(true)}
+                        className="edrea_tm_full_link mfp-iframe"
+                        href="https://zea-chat-room.herokuapp.com/"
+                        target="_blank"
                       />
                     </div>
                   </SwiperSlide>
@@ -106,12 +109,13 @@ const Portfolio = () => {
                         />
                       </div>
                       <div className="details">
-                        <h3>Blue Lemon</h3>
-                        <span>Image</span>
+                        <h3>Amazon Clone</h3>
+                        <span>Ecommerce</span>
                       </div>
                       <a
-                        className="edrea_tm_full_link zoom"
-                        href="img/portfolio/5.jpg"
+                        className="edrea_tm_full_link"
+                        href="https://clone-186ce.web.app/"
+                        target="_blank"
                       />
                     </div>
                   </SwiperSlide>
@@ -125,12 +129,152 @@ const Portfolio = () => {
                         />
                       </div>
                       <div className="details">
-                        <h3>Sweet Cheery</h3>
-                        <span>Image</span>
+                        <h3>Instagram Clone</h3>
+                        <span>Social Media</span>
                       </div>
                       <a
-                        className="edrea_tm_full_link zoom"
-                        href="img/portfolio/6.jpg"
+                        className="edrea_tm_full_link"
+                        href="https://instagram-clone-2a6a2.web.app/"
+                        target="_blank"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide className="swiper-slide">
+                    <div className="list_inner">
+                      <div className="image">
+                        <img src="img/thumbs/1-1.jpg" alt="" />
+                        <div
+                          className="main"
+                          data-img-url="img/portfolio/7.jpg"
+                        />
+                      </div>
+                      <div className="details">
+                        <h3>Slack</h3>
+                        <span>Messaging Platform</span>
+                      </div>
+                      <a
+                        className="edrea_tm_full_link"
+                        href="https://slack-clone-f421e.web.app/"
+                        target="_blank"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide className="swiper-slide">
+                    <div className="list_inner">
+                      <div className="image">
+                        <img src="img/thumbs/1-1.jpg" alt="" />
+                        <div
+                          className="main"
+                          data-img-url="img/portfolio/8.jpg"
+                        />
+                      </div>
+                      <div className="details">
+                        <h3>Chit Fund</h3>
+                        <span>Finance on Blockchain</span>
+                      </div>
+                      <a
+                        className="edrea_tm_full_link"
+                        href="https://github.com/Jameem/chit-fund"
+                        target="_blank"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide className="swiper-slide">
+                    <div className="list_inner">
+                      <div className="image">
+                        <img src="img/thumbs/1-1.jpg" alt="" />
+                        <div
+                          className="main"
+                          data-img-url="img/portfolio/10.jpg"
+                        />
+                      </div>
+                      <div className="details">
+                        <h3>Candy Crush</h3>
+                        <span>Gaming</span>
+                      </div>
+                      <a
+                        className="edrea_tm_full_link"
+                        href="https://jameem.me/candy-crush/"
+                        target="_blank"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide className="swiper-slide">
+                    <div className="list_inner">
+                      <div className="image">
+                        <img src="img/thumbs/1-1.jpg" alt="" />
+                        <div
+                          className="main"
+                          data-img-url="img/portfolio/9.jpg"
+                        />
+                      </div>
+                      <div className="details">
+                        <h3>Kickstarter</h3>
+                        <span>Crowd funding on Blockchain</span>
+                      </div>
+                      <a
+                        className="edrea_tm_full_link"
+                        href="https://github.com/Jameem/kickstarter"
+                        target="_blank"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide className="swiper-slide">
+                    <div className="list_inner">
+                      <div className="image">
+                        <img src="img/thumbs/1-1.jpg" alt="" />
+                        <div
+                          className="main"
+                          data-img-url="img/portfolio/11.jpg"
+                        />
+                      </div>
+                      <div className="details">
+                        <h3>Github Finder</h3>
+                      </div>
+                      <a
+                        className="edrea_tm_full_link"
+                        href="https://github-finder-v1.herokuapp.com/"
+                        target="_blank"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide className="swiper-slide">
+                    <div className="list_inner">
+                      <div className="image">
+                        <img src="img/thumbs/1-1.jpg" alt="" />
+                        <div
+                          className="main"
+                          data-img-url="img/portfolio/12.jpg"
+                        />
+                      </div>
+                      <div className="details">
+                        <h3>Donate Crypto</h3>
+                        <span>Charity on Blockchain</span>
+                      </div>
+                      <a
+                        className="edrea_tm_full_link"
+                        href="https://github.com/Jameem/donate-crypto"
+                        target="_blank"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide className="swiper-slide">
+                    <div className="list_inner">
+                      <div className="image">
+                        <img src="img/thumbs/1-1.jpg" alt="" />
+                        <div
+                          className="main"
+                          data-img-url="img/portfolio/13.jpg"
+                        />
+                      </div>
+                      <div className="details">
+                        <h3>Job Chain</h3>
+                        <span>Platform for freelancers on Blockchain</span>
+                      </div>
+                      <a
+                        className="edrea_tm_full_link"
+                        href="https://github.com/Jameem/job-chain"
+                        target="_blank"
                       />
                     </div>
                   </SwiperSlide>
@@ -166,6 +310,6 @@ const Portfolio = () => {
         </div>
       </div>
     </Fragment>
-  );
-};
-export default Portfolio;
+  )
+}
+export default Portfolio
