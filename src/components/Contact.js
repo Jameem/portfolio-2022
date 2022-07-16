@@ -41,7 +41,7 @@ const Contact = () => {
                     <i className="icon-location" />
                     <span>
                       <a href="#" className="href_location">
-                        Avon str. 22, NYC, USA
+                        Busse str. 18, Hamburg, Germany
                       </a>
                     </span>
                   </div>
@@ -51,15 +51,31 @@ const Contact = () => {
                   <div className="list_inner">
                     <i className="icon-mail-1" />
                     <span>
-                      <a href="mailto:example@gmail.com">example@gmail.com</a>
+                      <a href="mailto:example@gmail.com">jameem.mp@gmail.com</a>
                     </span>
                   </div>
                 </li>
                 <li>
                   <div className="list_inner">
-                    <i className="icon-facebook-rect" />
+                    <i className="icon-github-2" />
                     <span>
-                      <a href="https://www.facebook.com">@facebookNick</a>
+                      <a href="https://github.com/Jameem">@jameem</a>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div className="list_inner">
+                    <i className="icon-linkedin-1" />
+                    <span>
+                      <a href="https://www.linkedin.com/in/jameem/">@jameem</a>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div className="list_inner">
+                    <i className="icon-twitter-bird" />
+                    <span>
+                      <a href="https://twitter.com/jameem_mohd">@jameem_mohd</a>
                     </span>
                   </div>
                 </li>

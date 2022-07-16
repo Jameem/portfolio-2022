@@ -1,0 +1,21 @@
+.social {
+  margin-top: 100px;
+  position: relative;
+}
+
+.social .social_icons {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  list-style-type: none;
+}
+
+.social ul li {
+  margin: 15px;
+}
+
+.social ul li a i {
+  color: var(--main-color);
+  font-size: 24px;
+}
