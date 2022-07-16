@@ -251,9 +251,8 @@ const AboutPopup = ({ open, close, aboutData }) => {
                         <p>
                           We thank Jameem for the wonderful job in helping us
                           develop our ERP application. He was professional,
-                          excellent and hard working. Thanks to him, we were
-                          able to achieve our goal on time, and we look forward
-                          to continue working with them in the future.
+                          excellent and hard working. We look forward to
+                          continue working with them in the future.
                         </p>
                       </div>
                       <div className="details">
