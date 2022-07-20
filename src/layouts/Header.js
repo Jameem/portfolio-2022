@@ -1,11 +1,11 @@
-import { useContext } from "react";
-import { context } from "../context/context";
+import { useContext } from "react"
+import { context } from "../context/context"
 
 const Header = () => {
-  const navContext = useContext(context);
-  const { nav, changeNav } = navContext;
+  const navContext = useContext(context)
+  const { nav, changeNav } = navContext
 
-  const activeNav = (value) => (value == nav ? "active" : "");
+  const activeNav = (value) => (value == nav ? "active" : "")
 
   return (
     <div className="edrea_tm_header">
@@ -32,11 +32,6 @@ const Header = () => {
                 Portfolio
               </a>
             </li>
-            <li className={activeNav("news")}>
-              <a href="#news" onClick={() => changeNav("news")}>
-                News
-              </a>
-            </li>
             <li className={activeNav("contact")}>
               <a href="#contact" onClick={() => changeNav("contact")}>
                 Contact
@@ -46,6 +41,6 @@ const Header = () => {
         </div>
       </div>
     </div>
-  );
-};
-export default Header;
+  )
+}
+export default Header
