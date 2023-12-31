@@ -25,6 +25,26 @@ const Portfolio = () => {
                         <img src="img/thumbs/1-1.jpg" alt="" />
                         <div
                           className="main"
+                          data-img-url="img/portfolio/ai-img-gen.jpg"
+                        />
+                      </div>
+                      <div className="details">
+                        <h3>AI Image Generator</h3>
+                        <span>Powered by OpenAI</span>
+                      </div>
+                      <a
+                        className="edrea_tm_full_link"
+                        href="https://jazzy-malabi-4b982c.netlify.app/"
+                        target="_blank"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide className="swiper-slide">
+                    <div className="list_inner">
+                      <div className="image">
+                        <img src="img/thumbs/1-1.jpg" alt="" />
+                        <div
+                          className="main"
                           data-img-url="img/portfolio/1.jpg"
                         />
                       </div>
