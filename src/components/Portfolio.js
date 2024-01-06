@@ -19,6 +19,26 @@ const Portfolio = () => {
             <div className="portfolio_list gallery_zoom">
               <Swiper {...portfolioSlider} className="swiper-container">
                 <div className="swiper-wrapper">
+                <SwiperSlide className="swiper-slide">
+                    <div className="list_inner">
+                      <div className="image">
+                        <img src="img/thumbs/1-1.jpg" alt="" />
+                        <div
+                          className="main"
+                          data-img-url="img/portfolio/ai-text-to-voice.jpg"
+                        />
+                      </div>
+                      <div className="details">
+                        <h3>AI Text to Voice Generator</h3>
+                        <span>Powered by OpenAI</span>
+                      </div>
+                      <a
+                        className="edrea_tm_full_link"
+                        href="https://ai-text-to-voice.netlify.app/"
+                        target="_blank"
+                      />
+                    </div>
+                  </SwiperSlide>
                   <SwiperSlide className="swiper-slide">
                     <div className="list_inner">
                       <div className="image">
@@ -34,7 +54,7 @@ const Portfolio = () => {
                       </div>
                       <a
                         className="edrea_tm_full_link"
-                        href="https://jazzy-malabi-4b982c.netlify.app/"
+                        href="https://ai-image-jm.netlify.app/"
                         target="_blank"
                       />
                     </div>
