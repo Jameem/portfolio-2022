@@ -25,6 +25,26 @@ const Portfolio = () => {
                         <img src="img/thumbs/1-1.jpg" alt="" />
                         <div
                           className="main"
+                          data-img-url="img/portfolio/earth.jpg"
+                        />
+                      </div>
+                      <div className="details">
+                        <h3>Earth</h3>
+                        <span>Powered by ThreeJS</span>
+                      </div>
+                      <a
+                        className="edrea_tm_full_link"
+                        href="https://earth-mj.netlify.app/"
+                        target="_blank"
+                      />
+                    </div>
+                  </SwiperSlide>
+                <SwiperSlide className="swiper-slide">
+                    <div className="list_inner">
+                      <div className="image">
+                        <img src="img/thumbs/1-1.jpg" alt="" />
+                        <div
+                          className="main"
                           data-img-url="img/portfolio/ai-text-to-voice.jpg"
                         />
                       </div>
